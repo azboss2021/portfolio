@@ -20,7 +20,7 @@ export const sendEmail = async ({
 		from: `CONTACT <contact@cwilson.fun>`,
 		to: "cwilsonfun@gmail.com",
 		subject: subject,
-		react: EmailTemplate({ name, message, email }),
+		html: "<div><h1>Name: {name}</h1><h3>Email: {email}</h3><p>Message: {message}</p></div>",
 	});
 
 	if (error) return { error: error };
