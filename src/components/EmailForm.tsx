@@ -8,6 +8,7 @@ import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 import { Label } from "./ui/label";
 import { Resend } from "resend";
+import { sendEmail } from "@/lib/actions";
 
 const EmailForm = () => {
 	const [name, setName] = useState("");
@@ -18,24 +19,24 @@ const EmailForm = () => {
 	const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
 
-		let error = false;
+		let parseError = false;
 		if (name.length < 1) {
 			toast.error("Name must not be empty");
-			error = true;
+			parseError = true;
 		}
 		if (email.length < 1) {
 			toast.error("Email must not be empty");
-			error = true;
+			parseError = true;
 		}
 		if (subject.length < 1) {
 			toast.error("Subject must not be empty");
-			error = true;
+			parseError = true;
 		}
 		if (message.length < 1) {
 			toast.error("Message must not be empty");
-			error = true;
+			parseError = true;
 		}
-		if (error) return;
+		if (parseError) return;
 
 		const storedDateString = localStorage.getItem("lastEmailSentDate");
 		if (storedDateString) {
@@ -52,26 +53,11 @@ const EmailForm = () => {
 			}
 		}
 
-		try {
-			const resend = new Resend(process.env.RESEND_API_KEY);
+		const response = await sendEmail({ name, email, subject, message });
 
-			const emailResponse = await resend.emails.send({
-				from: `CONTACT ${email}`,
-				to: "cwilsonfun@gmail.com",
-				subject: subject,
-				react: (
-					<>
-						<div>Name: {name}</div>
-						<div>Email: {email}</div>
-						<div>Message: {message}</div>
-					</>
-				),
-			});
-
-			console.log(JSON.stringify(emailResponse));
-		} catch (error) {
-			// return toast.error(JSON.stringify(error));
-			return toast.error("Something went wrong. Please try again");
+		if (response?.error) {
+			return toast.error(JSON.stringify(response.error));
+			// return toast.error("Something went wrong. Please try again");
 		}
 
 		const emailDate = new Date();
