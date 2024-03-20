@@ -1,6 +1,5 @@
 "use server";
 
-import { EmailTemplate } from "@/components/EmailTemplate";
 import { Resend } from "resend";
 
 export const sendEmail = async ({
@@ -20,7 +19,7 @@ export const sendEmail = async ({
 		from: `CONTACT <contact@cwilson.fun>`,
 		to: "cwilsonfun@gmail.com",
 		subject: subject,
-		html: "<div><h1>Name: {name}</h1><h3>Email: {email}</h3><p>Message: {message}</p></div>",
+		html: `<div><h1>Name: ${name}</h1><h3>Email: ${email}</h3><p>Message: ${message}</p></div>`,
 	});
 
 	if (error) return { error: error };
