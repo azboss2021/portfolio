@@ -25,7 +25,7 @@ const projects: {
 		date: "2024",
 		description:
 			"This boilerplate built over a few weeks encompasses most of the tools I would use to build a SaaS. It has an authentication system, account actions, support email page, stripe payments, newsletter subscription, and a customizeable landing page.",
-		demoLink: "https://www.youtube.com/embed/C8c1rXPi5mk?si=EJqX4TNl5054y9_e",
+		demoLink: "https://www.youtube.com/embed/U_4kkuXUN_0?si=QATweDpnznBj1RWs",
 		skills: [
 			{ skill: "Next.js" },
 			{ skill: "React" },
@@ -42,7 +42,7 @@ const projects: {
 			"This basic pathfinding app visualizes the shortest node-to-node path. This project simulates the A* algorithm I learned in my senior classes.",
 		repoLink: "https://github.com/azboss2021/pathfinding",
 		liveDemoLink: "https://azboss2021.github.io/pathfinding/",
-		demoLink: "https://www.youtube.com/embed/g0iAD70UgWo?si=kMRJlZcWlMJn5zUg",
+		demoLink: "https://www.youtube.com/embed/73MtV735ssQ?si=Y6g7Fp7PJgGP6EJS",
 		skills: [
 			{ skill: "Vite" },
 			{ skill: "React" },
@@ -57,7 +57,7 @@ const projects: {
 			"This basic sorting app visualizes a list of numbers being sorted from a random state. This project implements a few common sorting algorithms I learned in my senior classes.",
 		repoLink: "https://github.com/azboss2021/sorting-practice",
 		liveDemoLink: "https://azboss2021.github.io/sorting-practice/",
-		demoLink: "https://www.youtube.com/embed/8aUCjeSjpB0?si=iXKknuvln0UCsOQv",
+		demoLink: "https://www.youtube.com/embed/SBSD4NFydFY?si=eQr-JtcSV-ABaSsP",
 		skills: [
 			{ skill: "Vite" },
 			{ skill: "React" },
@@ -72,7 +72,7 @@ const projects: {
 			"This was one of my first projects that I made while learning React states and forms. It is included in this project list to show my progress while self-learning.",
 		repoLink: "https://github.com/azboss2021/cv-project",
 		liveDemoLink: "https://azboss2021.github.io/cv-project/",
-		demoLink: "https://www.youtube.com/embed/IkuTTvlKnj8?si=lSIVBa50ao5lxRwh",
+		demoLink: "https://www.youtube.com/embed/LSeUnKWt6XI?si=fZ19bHORLwRCRnAV",
 		skills: [
 			{ skill: "Create React App" },
 			{ skill: "React" },
