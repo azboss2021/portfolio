@@ -56,8 +56,8 @@ const EmailForm = () => {
 		const response = await sendEmail({ name, email, subject, message });
 
 		if (response?.error) {
-			return toast.error(JSON.stringify(response.error));
-			// return toast.error("Something went wrong. Please try again");
+			toast.error(JSON.stringify(response.error));
+			return;
 		}
 
 		const emailDate = new Date();

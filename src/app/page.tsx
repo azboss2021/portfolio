@@ -21,6 +21,22 @@ const projects: {
 	skills: { skill: string; text?: string; color?: string }[];
 }[] = [
 	{
+		title: "CaptionIt.fun",
+		date: "2024",
+		description:
+			"This is my first full stack app that I built using my Next.js boilerplate. It accepts payments and is user ready. As of 4/5/24, there is lots of work to be done, and bugs to be fixed. Until then, I will be periodically updating it as I work on other projects.",
+		demoLink: "https://www.youtube.com/embed/9DapZ_-stPY?si=vOFsuNWlBbiKJYRx",
+		liveDemoLink: "https:captionit.fun",
+		skills: [
+			{ skill: "Next.js" },
+			{ skill: "React" },
+			{ skill: "Typescript" },
+			{ skill: "Tailwind" },
+			{ skill: "Stripe" },
+			{ skill: "MongoDB" },
+		],
+	},
+	{
 		title: "Next.js Full Stack Boilerplate",
 		date: "2024",
 		description:
