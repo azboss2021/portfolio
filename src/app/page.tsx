@@ -34,6 +34,8 @@ const projects: {
 			{ skill: "Tailwind" },
 			{ skill: "Stripe" },
 			{ skill: "MongoDB" },
+			{ skill: "Cloudinary" },
+			{ skill: "OpenAI" },
 		],
 	},
 	{
