@@ -71,70 +71,61 @@ const projects: {
 export default function Home() {
 	return (
 		<main className="flex flex-col items-center pt-20 pb-32 gap-24 max-w-5xl mx-auto px-8">
-			<div className="flex items-start justify-between w-full">
-				<div className="flex flex-col gap-4 items-start">
-					<h1 className="text-6xl font-bold">Caleb Wilson</h1>
+			<div className="flex flex-col gap-4 items-start w-full">
+				<h1 className="text-6xl font-bold">Caleb Wilson</h1>
 
-					<h2 className="text-2xl">Full Stack & Next.js Developer</h2>
+				<h2 className="text-2xl">Full Stack & Next.js Developer</h2>
 
-					<div className="flex flex-col gap-2 items-start opacity-80">
-						<Link
-							href="mailto:calebjwilson14@gmail.com"
-							target="_blank"
-							className="hover:underline flex items-start gap-2"
-						>
-							<div className="mt-1">
-								<FaEnvelope />
-							</div>
-							calebjwilson14@gmail.com
-						</Link>
-						<Link
-							href="https://www.linkedin.com/in/calebwilson-lv/"
-							target="_blank"
-							className="hover:underline flex items-start gap-2"
-						>
-							<div className="mt-1">
-								<FaLinkedin />
-							</div>
-							calebwilson-lv
-						</Link>
-						<Link
-							href="https://github.com/azboss2021"
-							target="_blank"
-							className="hover:underline flex items-start gap-2"
-						>
-							<div className="mt-1">
-								<FaGithub />
-							</div>
-							azboss2021
-						</Link>
-						<div className="flex items-start gap-2">
-							<div className="mt-1">
-								<FaBriefcase size={14} />
-							</div>
-							General Dynamics (2024 - 2025)
+				<div className="flex flex-col gap-2 items-start opacity-80">
+					<Link
+						href="mailto:calebjwilson14@gmail.com"
+						target="_blank"
+						className="hover:underline flex items-start gap-2"
+					>
+						<div className="mt-1">
+							<FaEnvelope />
 						</div>
-						<div className="flex items-start gap-2">
-							<div className="mt-1">
-								<FaGraduationCap size={14} />
-							</div>
-							BSc Computer Science @ UNLV (2023)
+						calebjwilson14@gmail.com
+					</Link>
+					<Link
+						href="https://www.linkedin.com/in/calebwilson-lv/"
+						target="_blank"
+						className="hover:underline flex items-start gap-2"
+					>
+						<div className="mt-1">
+							<FaLinkedin />
 						</div>
-						<div className="flex items-start gap-2">
-							<div className="mt-1">
-								<FaLocationDot size={14} />
-							</div>
-							Moon Township, PA
+						calebwilson-lv
+					</Link>
+					<Link
+						href="https://github.com/azboss2021"
+						target="_blank"
+						className="hover:underline flex items-start gap-2"
+					>
+						<div className="mt-1">
+							<FaGithub />
 						</div>
+						azboss2021
+					</Link>
+					<div className="flex items-start gap-2">
+						<div className="mt-1">
+							<FaBriefcase size={14} />
+						</div>
+						General Dynamics (2024 - 2025)
+					</div>
+					<div className="flex items-start gap-2">
+						<div className="mt-1">
+							<FaGraduationCap size={14} />
+						</div>
+						BSc Computer Science @ UNLV (2023)
+					</div>
+					<div className="flex items-start gap-2">
+						<div className="mt-1">
+							<FaLocationDot size={14} />
+						</div>
+						Moon Township, PA
 					</div>
 				</div>
-				<Image
-					width={196}
-					height={196}
-					src="/CJ.jpeg"
-					alt="CJ"
-					className="rounded-full"
-				/>
 			</div>
 
 			<section className="flex flex-col gap-24">
